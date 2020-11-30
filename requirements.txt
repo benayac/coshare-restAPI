@@ -2,3 +2,4 @@ fastapi
 pymongo
 pydantic
 typing
+dns
