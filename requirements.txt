@@ -2,4 +2,3 @@ fastapi
 pymongo
 pydantic
 typing
-bson
