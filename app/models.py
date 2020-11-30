@@ -11,6 +11,7 @@ class AddCourse(BaseModel):
     createdDate: Optional[datetime]
     creator: str
     courseId: Optional[int]
+    courseDesc: str
     courseCategory: str
     courseImage: str
     syllabus: List[Syllabus]
