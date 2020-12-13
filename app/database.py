@@ -43,3 +43,9 @@ class Database():
             return self.COURSES.find_one({"courseId":id})
         except Exception as e:
             return str(e)
+
+    def get_courses_from_type(self, type):
+        try:
+            return self.COURSES.find({"courseCategory": type})
+        except Exception as e:
+            return str(e)

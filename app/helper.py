@@ -15,3 +15,9 @@ def request_success(body):
 
 def request_error(body):
     return {"statusCode": 400, "body": body}
+
+def youtube_to_id(link):
+    regex = ["https", ":", "/", "www", ".", "youtube", "com", "watch?v=", "youtu.be"]
+    for reg in regex:
+        link = link.replace(reg, "")
+    return link
